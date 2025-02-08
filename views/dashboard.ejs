@@ -1,0 +1,45 @@
+<!-- dashboard.ejs -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+</head>
+<body>
+    
+    <img src="<%= user.profilePic %>" alt="Profile Pic" width="100">
+    <h1>Welcome, <%= user.username %>!</h1>
+    <h2>Upload Image</h2>
+    <form action="/upload" method="POST" enctype="multipart/form-data">
+        <input type="file" name="img" required>
+        <input type="text" name="description" placeholder="Description" required>
+        <button type="submit">Upload</button>
+    </form>
+
+    <h2>Your Uploads</h2>
+    <ul>
+        <% user.uploads.forEach(upload => { %>
+            <li>
+                <img src="<%= upload.img %>" width="100">
+                <p><%= upload.description %></p>
+                <p>Status: <%= upload.finalStatus %></p>
+            </li>
+        <% }); %>
+    </ul>
+
+    <h2>Pending Consent Requests</h2>
+    <ul>
+        <% user.allRequests.forEach(request => { %>
+            <li>
+                <img src="<%= request.img %>" width="100">
+                <form action="/consent/<%= request._id %>" method="POST">
+                    <input type="hidden" name="uploadId" value="<%= request.uploadId %>">
+                    <button type="submit" name="status" value="approve">Approve</button>
+                    <button type="submit" name="status" value="reject">Reject</button>
+                </form>
+            </li>
+        <% }); %>
+    </ul>
+
+    <a href="/logout">Logout</a>
+</body>
+</html>
