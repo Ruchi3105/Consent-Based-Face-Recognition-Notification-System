@@ -150,33 +150,28 @@ Server will start at **http://localhost:3000**.
 
 ## 🏆 Hackathon Submission Details
 - **Project Name**: Consent-Based Face Recognition Notification System
-- **Team Name**: [Your Team Name]
-- **Category**: AI & Privacy
+- **Team Name**: BobTheBuilder
+- **Category**: Cyber-Security
 - **Tech Stack**: MongoDB, Express.js, Node.js, Face++ API, EJS
 
 ---
 
 ## 📝 Contributors
-- **[Your Name]** - Developer
-- **[Team Member 2]** - Backend Developer
-- **[Team Member 3]** - UI/UX Designer
+- **Ruchi** - Team Leader
+- **Pavitra Asthana** - Team member 2
+- **Rishika Singh** - Team member 3
 
 ---
 
 ## 🤝 Acknowledgments
 - **Face++ API** for providing face recognition capabilities.
 - **MongoDB Atlas** for cloud database hosting.
-- **Hackathon Organizers** for the opportunity to showcase this project.
-
----
-
-## 📜 License
-This project is open-source and available under the **MIT License**.
+- **HackJMI 2025 Hackathon Organizers** for the opportunity to showcase this project.
 
 ---
 
 ## 📞 Contact
-For any queries or suggestions, feel free to reach out at **your-email@example.com**.
+For any queries or suggestions, feel free to reach out at **ruchi.cse31@gmail.com**.
 
 ---
 🚀 **Let's revolutionize privacy in social media with AI-driven consent-based notifications!**
